@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiras noções de JS</title>
+  </head>
+  <body>
+    <h1>Introdução</h1>
+    <p>
+      JavaScript é uma linguagem de tipagem <strong>dinâmica</strong> - você não
+      precisa explicitar o tipo de dado ao declarar e inicializar uma variável,
+      e também pode reatribuir o valor para outro tipo de dado sem causar erro.
+      Além disso, é <strong>fracamente tipada</strong>, ou seja, "permite a
+      conversão implícita de tipo quando uma operação envolve tipos
+      incompatíveis".
+    </p>
+    <h2>JS interno e externo</h2>
+    <p>
+      Para fazer o JavaScript interagir com o html, podemos colocar o código
+      dentro de scripts internos ou externos.
+    </p>
+    <p>
+      O interno vai dentro do próprio arquivo html, dentro de um trecho de
+      código limitado pela tag <code>&lt;script&gt;</code> e
+      <code>&lt;/script&gt;</code>
+    </p>
+    <p>
+      Porém, o mais comum é criar um arquivo externo com a extensão .js e depois
+      referenciar o arquivo dentro do html com a tag
+      <code>&lt;script src="arquivoJavaScript.js"&gt;&lt;/script&gt;.</code> As
+      duas formas funcionam da mesma maneira.
+    </p>
+    <p>
+      Clique para exibir um alerta:
+      <button onclick="alertaInterno()">JS INTERNO</button>
+      <button onclick="alertaExterno()">JS EXTERNO</button>
+    </p>
+
+    <script>
+      function alertaInterno() {
+        alert("Esse é um alerta vindo de um script interno!");
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
