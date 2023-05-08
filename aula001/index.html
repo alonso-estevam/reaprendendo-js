@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Primeiras noções de JS</title>
+    <title>001 - Primeiras noções de JS</title>
   </head>
   <body>
     <h1>Introdução</h1>
@@ -37,6 +37,41 @@
       <button onclick="alertaInterno()">JS INTERNO</button>
       <button onclick="alertaExterno()">JS EXTERNO</button>
     </p>
+
+    <h2>Tipos de saída</h2>
+    <ul>
+      <li>
+        <p>Exemplo com o <code>innerHTML</code>:</p>
+        <p id="exemploInnerHtml"></p>
+        <p>
+          Importante lembrar que o <code>innerHTML</code> trata o conteúdo de um
+          elemento como HTML mesmo, então podemos colocar tags html dentro do
+          conteúdo. Já o <code>innerText</code> trata tudo como texto - se você
+          colocar a tag &lt;strong&gt;, por exemplo, em vez de renderizar o
+          texto como negrito ela será impressa.
+        </p>
+      </li>
+      <li>
+        <p>Exemplo com <code>document.write</code>:</p>
+        <script>
+          document.write("<p>Oi escrito com <em>document.write</em></p>");
+
+          document.write("Somando 2 + 2 = " + (2 + 2));
+        </script>
+        <p>
+          Cabe lembrar que geralmente o document.write é mais usado para testes,
+          e também aceita funções.
+        </p>
+      </li>
+      <li>com o alert, já visto</li>
+      <li>
+        Com o <code>console.log</code>, que aparece na janela das funções de
+        desenvolvedor e também é bastante utilizado.
+        <script>
+          console.log("Oi, isso é um console.log");
+        </script>
+      </li>
+    </ul>
 
     <script>
       function alertaInterno() {
